@@ -12,17 +12,12 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 3120
-TARGET_SCREEN_WIDTH := 1440
-
 # Camera
 PRODUCT_PACKAGES += \
     OnePlusCameraHelper
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     fstab.qcom.ramdisk
 
 # Overlays
