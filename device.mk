@@ -23,15 +23,18 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
-    OPlusFrameworksResTarget \
-    OPlusSettingsProviderResTarget \
-    OPlusSettingsResTarget \
-    OPlusSystemUIResTarget
+    AOSPAOnePlus7TProFrameworks \
+    AOSPAOnePlus7TProSystemUI \
+    OnePlus7TProFrameworks \
+    OnePlus7TProSettings \
+    OnePlus7TProSettingsProvider \
+    OnePlus7TProSystemUI
 
+# Camera
+PRODUCT_PACKAGES += \
+    ApertureOverlay
+    
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
